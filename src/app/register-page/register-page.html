@@ -1,0 +1,81 @@
+
+
+
+<section class="register">
+<div class="container-fluid  p-0 ">
+   <div class="row">
+   <div class="col-6">
+    <div class="image-container">
+      <img src="images/auth.svg" alt="">
+    </div>
+  </div>
+
+  <div class="col-6">
+
+    <div class="content  pt-5 mt-5 text-center w-100">
+      
+  <div class="logo mb-5 ">
+    <img class="logo-image" src="images/logo.svg" alt="">
+  </div>
+  <div class="welcome-msg">
+    <h2 class="title"> Create new account</h2>
+    <p class="desc">Register</p>
+  </div>
+
+  <form  [formGroup]="registerForm" (ngSubmit)="onSubmit(registerForm)">
+
+
+    <mat-form-field class="example-full-width m-3">
+    <mat-label>First Name</mat-label>
+    <input formControlName="first_name" matInput placeholder="first name">
+  </mat-form-field><mat-form-field class="example-full-width">
+    <mat-label>Last Name</mat-label>
+    <input formControlName="last_name" matInput placeholder="last name">
+  </mat-form-field>
+
+
+    <mat-form-field class="example-full-width">
+    <mat-label>E-mail</mat-label>
+    <input formControlName="email" matInput placeholder="john@mail.com">
+  </mat-form-field>
+
+<br>
+
+  <!-- Password -->
+
+   <mat-form-field class="example-full-width">
+    <mat-label>Enter your password</mat-label>
+    <input formControlName="password" matInput [type]="hide() ? 'password' : 'text'" />
+    <button
+      matIconButton
+      matSuffix
+      (click)="clickEvent($event)"
+      [attr.aria-label]="'Hide password'"
+      [attr.aria-pressed]="hide()"
+    >
+      <mat-icon>{{hide() ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </button>
+  </mat-form-field>
+<br>
+<!-- Role ------------------------------>
+
+<mat-form-field class="example-full-width">
+  <mat-label>Role</mat-label>
+  <mat-select  formControlName="role">
+    <mat-option value="Admin">Admin</mat-option>
+    <mat-option value="User">User</mat-option>
+  </mat-select>
+</mat-form-field>
+  <!----------------- Buttons ---------->
+  <div class="example-button-row">
+
+    <button class="loginBtn mb-3" type="submit" matButton="filled">Register</button>
+    <br>
+    <button class="registernBtn"  matButton="outlined">Login</button>
+  </div>
+  </form>
+    </div>
+  </div>
+ </div>
+</div>
+</section>

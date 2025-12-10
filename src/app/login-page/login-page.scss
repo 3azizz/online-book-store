@@ -1,0 +1,75 @@
+.logo-image {
+  overflow: hidden;
+}
+
+.example-form {
+  width: 50%;
+}
+
+.example-full-width {
+  width: 40%;
+}
+
+// ******************
+
+@media (max-width: 992px) {
+  form {
+    width: 100%;
+
+    .example-full-width {
+      width: 80%;
+    }
+
+    .loginBtn,
+    .registernBtn {
+      width: 80%;
+    }
+  }
+
+  .col-6 {
+    width: 100%;
+    text-align: center;
+  }
+.image-container{
+width: 50%;
+   .image-container img {
+    width: 70%;
+    margin: auto;
+  }
+}
+ 
+}
+
+
+
+// ********************
+
+form {
+  text-align: center;
+  margin-top: 70px;
+  width: 100%;
+  @media (max-width: 992px) {
+    width: 100%;
+  }
+
+ 
+  
+  .loginBtn {
+    width: 40%;
+    height: 60;
+    border-radius: 4px;
+    padding: 10px 20px;
+    opacity: 1;
+    background: #ef6b4a;
+  }
+
+  .registernBtn{
+    width: 40%;
+height: 60;
+border-radius: 4px;
+padding-top: 10px 20px;
+border-width: 1px #6251DD;
+color: #6251DD;
+
+  }
+}

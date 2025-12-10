@@ -30,7 +30,9 @@
               }
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
+              
             ],
             "server": "src/main.server.ts",
             "outputMode": "server",
@@ -87,6 +89,7 @@
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
+              "src/assets",
               {
                 "glob": "**/*",
                 "input": "public"
@@ -99,5 +102,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "4fbd39ea-0b5d-45cc-a29e-45939de04f16"
   }
 }
