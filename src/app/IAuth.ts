@@ -25,7 +25,14 @@ export interface ILoginResponse {
   timestamp: string;
 }
 
-
+export interface IRegisterRequest {
+  first_name: string;
+  last_name: string;
+  password: string;
+  email: string;
+  role: 'admin' | 'customer';
+  id?: string;
+}
 
 export interface IRegisterResponse {
   message: string;
@@ -46,7 +53,11 @@ export interface IRegisterResponse {
   timestamp: string;
 }
 
-export interface IForgotPassword {
+export interface IForgotPasswordRequest {
+  email : string;
+}
+
+export interface IForgotPasswordResponse {
   message: string;
   code: number;
   status: string;

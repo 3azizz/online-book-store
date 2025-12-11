@@ -22,7 +22,7 @@
 
     .loginBtn,
     .registernBtn {
-      width: 80%;
+      width: 100%;
     }
   }
 
@@ -33,7 +33,7 @@
 .image-container{
 width: 50%;
    .image-container img {
-    width: 70%;
+    width: 100%;
     margin: auto;
   }
 }
@@ -71,5 +71,15 @@ padding-top: 10px 20px;
 border-width: 1px #6251DD;
 color: #6251DD;
 
+  }
+
+  .forgetnBtn{
+
+      width: 40%;
+height: 60;
+border-radius: 4px;
+padding-top: 10px 20px;
+border-width: 1px #cc1212;
+color: #f6eded;
   }
 }

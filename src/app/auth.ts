@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import {inject ,Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { IChangePassword, IForgotPassword, ILoginRequest ,ILoginResponse, IRegisterResponse, IResetPassword } from './IAuth';
+import { IChangePassword, IForgotPasswordRequest, IForgotPasswordResponse, ILoginRequest ,ILoginResponse,IRegisterRequest, IRegisterResponse, IResetPassword } from './IAuth';
 
 
 
@@ -16,14 +16,15 @@ export class Auth {
     return this.http.post<ILoginResponse>('auth/login', data);
   }
 
-  onRegister(data:IRegisterResponse):Observable <IRegisterResponse>{
+  onRegister(data:IRegisterRequest):Observable <IRegisterResponse>{
     return this.http.post<IRegisterResponse>('auth/register', data);
   }
 
-    onForgotPassword(data:IForgotPassword):Observable <IForgotPassword>{
-    return this.http.post<IForgotPassword>('auth/forgot-password', data);
-  }
 
+  onForgotPassword(data:IForgotPasswordRequest):Observable <IForgotPasswordResponse>{
+    return this.http.post<IForgotPasswordResponse>('auth/forgot-password', data);
+  }
+ 
      onResetPassword(data:IResetPassword):Observable <IResetPassword>{
     return this.http.post<IResetPassword>('auth/reset-password', data);
   }

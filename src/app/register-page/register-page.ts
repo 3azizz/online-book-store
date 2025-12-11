@@ -24,7 +24,7 @@ registerForm = new FormGroup({
   last_name : new FormControl('',[ Validators.required]),
   email : new FormControl('',[ Validators.required , Validators.email]),
   password : new FormControl('',[Validators.required]),
-  role : new FormControl('',[Validators.required])
+  role : new FormControl('Customer',[Validators.required])
 })
   
   hide = signal(true);
@@ -49,7 +49,8 @@ registerForm = new FormGroup({
       }
     })
 
-    console.log(registerForm.value);
+    // console.log(registerForm.value);
+    console.log("SENDING => ", registerForm.value);
     
   }
 

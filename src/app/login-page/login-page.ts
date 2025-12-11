@@ -8,13 +8,14 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import { error, log } from 'console';
 import { Auth } from '../auth';
+import { RouterLink } from "@angular/router";
 
 
 
 
 @Component({
   selector: 'app-login-page',
-  imports: [ReactiveFormsModule, MatFormField, MatLabel ,FormsModule, MatFormFieldModule, MatInputModule,MatIconModule,MatButtonModule],
+  imports: [ReactiveFormsModule, MatFormField, MatLabel, FormsModule, MatFormFieldModule, MatInputModule, MatIconModule, MatButtonModule, RouterLink],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './login-page.html',
   styleUrl: './login-page.scss',
