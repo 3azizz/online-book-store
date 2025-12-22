@@ -1,85 +1,27 @@
 <!-- Header -->
-<mat-toolbar>
-  <div class="header d-flex justify-content-between align-items-center w-100">
-    <div class="left">
-      <button matIconButton class="example-icon" aria-label="Example icon-button with menu icon">
-        <mat-icon>phone</mat-icon>
-      </button>
-      <span>+91 8374902234</span>
-    </div>
-    <div class="right">
-      <button matIconButton class="example-icon" aria-label="Example icon-button with share icon">
-        <mat-icon>home</mat-icon>
-      </button>
+ <app-header></app-header>
 
-      <button matIconButton class="example-icon" aria-label="Example icon-button with share icon">
-        <mat-icon>home</mat-icon>
-      </button>
-
-      <button matIconButton class="example-icon" aria-label="Example icon-button with share icon">
-        <mat-icon>home</mat-icon>
-      </button>
-
-      <button matIconButton class="example-icon" aria-label="Example icon-button with share icon">
-        <mat-icon>home</mat-icon>
-      </button>
-    </div>
-  </div>
-</mat-toolbar>
 <!-- NAV -->
-<div class="container mt-5">
-  <nav>
-    <div class="d-flex justify-content-between align-items-center w-100">
-      <div class="left">
-        <div class="image-container">
-          <img src="images/logo.svg" alt="" class="rounded rounded-circle" />
-        </div>
-      </div>
-      <div class="center">
-        <div class="list-unstyled">
-          <ul>
-            <li class="active">HOME</li>
-            <li>ABOUT US</li>
-            <li>BOOKS</li>
-            <li>NEW RELEASE</li>
-            <li>CONTACT US</li>
-            <li>BLOG</li>
-          </ul>
-        </div>
-      </div>
-      <div class="right">
-        <button matIconButton class="example-icon" aria-label="Example icon-button with share icon">
-          <mat-icon>person</mat-icon>
-        </button>
 
-        <button matIconButton class="example-icon" aria-label="Example icon-button with share icon">
-          <mat-icon>shopping_bag</mat-icon>
-        </button>
+<app-navbar></app-navbar>
 
-        <button matIconButton class="example-icon" aria-label="Example icon-button with share icon">
-          <mat-icon>favorite</mat-icon>
-        </button>
-      </div>
-    </div>
-  </nav>
-</div>
 <!-- landing -->
-<!-- <app-landing-page></app-landing-page> -->
+<app-landing-page></app-landing-page>
 
 
 <!-- Explore  -->
-<div class="container mt-5 mb-5">
+<div class="container m-5 mb-5" *ngFor="let i of category">
 
   <h2 class="explore-header">Explore our Top Categories</h2>
 
   <div class="explore d-flex justify-content-between align-items-center w-100 mt-5 h-500px">
  
     <div class="highr-education align-items-center  d-flex flex-column">
-      <img class="h-500px mb-3" src="images/photo2.svg" alt=""> <br>
-    <span class="title center">Higher Education</span>
+      <img class="h-500px mb-3" [src]="i.image" alt=""> <br>
+    <span class="title center">{{ i.title }}</span>
     </div>
     
-    <div class="highr-education align-items-center  d-flex flex-column">
+    <!-- <div class="highr-education align-items-center  d-flex flex-column">
       <img class="h-500px mb-3" src="images/photo3.svg" alt=""> <br>
     <span class="title center"> Management Books</span>
     </div>
@@ -87,57 +29,26 @@
     <div class="highr-education align-items-center  d-flex flex-column">
       <img class="h-500px mb-3" src="images/photo1.svg" alt=""> <br>
     <span class="title center">Engineering Books</span>
-    </div>
+    </div> -->
 </div>
 
 </div>
 
 <!-- NEW Realese Book -->
- <section class="new-release-book p-3  mb-5">
-  <div class="container-headers mt-4">
-    <h1 class="some-quality-header">Some quality items</h1>
-    <h2 class="new-release-header mb-5">New Release Books</h2>
-  </div>
 
-  <div class="book-wrapper align-items-center  d-flex flex-column">
-  <img src="images/white.png"  class="white-card">
-  <img src="images/book2.svg" alt="Book" class="book-image">
-  <span class="book-title mt-4">Great travel at desert</span>
-  <span class="writer mt-2 sm">Sanchit Howdy</span>
-  <span class="price sm mt-3">$ 38.00</span>
-</div> <br>
+<app-new-realese-section></app-new-realese-section>
+ 
 
+<!-- Featured book section  -->
+ <app-featured-book-section></app-featured-book-section>
 
- </section>
+ <!-- Discount section -->
+
+ <app-discount-section></app-discount-section>
+
+<!-- latest articles -->
+
+<app-latest-articles-section></app-latest-articles-section>
+ 
 <!-- footer -->
-<!-- <mat-toolbar>
-  <div class="footer d-flex justify-content-between align-items-center w-100">
-    <div class="left">
-      <div class="footer-logo-image">
-          <img src="images/logo2.png" alt="" />
-        </div>
-        <p>Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <button matIconButton class="example-icon" aria-label="Example icon-button with menu icon">
-        <mat-icon>phone</mat-icon>
-      </button>
-     <span>© 2022 Arihant. All Rights Reserved. Privacy | Terms of Service</span>
-    </div>
-    <div class="right">
-      <button matIconButton class="example-icon" aria-label="Example icon-button with share icon">
-        <mat-icon>home</mat-icon>
-      </button>
-
-      <button matIconButton class="example-icon" aria-label="Example icon-button with share icon">
-        <mat-icon>home</mat-icon>
-      </button>
-
-      <button matIconButton class="example-icon" aria-label="Example icon-button with share icon">
-        <mat-icon>home</mat-icon>
-      </button>
-
-      <button matIconButton class="example-icon" aria-label="Example icon-button with share icon">
-        <mat-icon>home</mat-icon>
-      </button>
-    </div>
-  </div>
-</mat-toolbar> -->
+<app-footer></app-footer>

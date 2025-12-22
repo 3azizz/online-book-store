@@ -1,5 +1,40 @@
-
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
+}
+
+.header-one {
+  width: 471px;
+height: 87px;
+opacity: 1;
+font-family: Inter;
+font-weight: 600;
+font-size: 60px;
+line-height: 145%;
+letter-spacing: -2%;
+text-transform: capitalize;
+color: #393280;
+}
+
+.p-one{
+  width: 607;
+height: 165;
+opacity: 1;
+font-family: Inter;
+font-weight: 500;
+font-size: 22px;
+line-height: 180%;
+letter-spacing: 4%;
+color: #393280CC;
+
+}
+
+.btn{
+  width: 197px;
+height: 61px;
+opacity: 1;
+border: 1px solid #393280;
+color: #393280;
+
 }

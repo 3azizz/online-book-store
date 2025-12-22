@@ -1,0 +1,22 @@
+
+.image-container {
+  width: 86px;
+  height: 86px;
+  opacity: 1;
+  border-radius: 43px;
+}
+
+ul li {
+  display: inline-block;
+  margin-right: 15px;
+  font-family: Inter;
+  font-weight: 800;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+
+.active {
+  color: #ed553b;
+}
+

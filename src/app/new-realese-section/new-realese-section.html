@@ -1,0 +1,58 @@
+ <section class="new-release-book p-2  mb-2 w-100">
+
+  <div class="container-headers mt-4">
+    <h1 class="some-quality-header">Some quality items</h1>
+    <h2 class="new-release-header mb-5">New Release Books</h2>
+  </div>
+
+
+ 
+<div class="container-fluid ">
+ <div class="row w-100 ">
+    <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide  *ngFor="let book of bookList"> 
+    <div class="book-wrapper align-items-center  d-flex flex-column">
+  <img src="images/white.png"  class="white-card">
+  <img [src]="book.image" alt="Book" class="book-image">
+  <span class="book-title mt-4">{{ book.title }}</span>
+  <span class="writer mt-2 sm">{{ book.author }}</span>
+  <span class="price sm mt-3">${{ book.price }}</span>
+</div>
+</ng-template>  
+  
+
+
+<!-- *******************************  -->
+<!-- <ng-template carouselSlide><div class="book-wrapper align-items-center  d-flex flex-column">
+  <img src="images/white.png"  class="white-card">
+  <img src="images/book2.svg" alt="Book" class="book-image">
+  <span class="book-title mt-4">Great travel at desert</span>
+  <span class="writer mt-2 sm">Sanchit Howdy</span>
+  <span class="price sm mt-3">$ 38.00</span>
+</div></ng-template>  
+    <ng-template carouselSlide><div class="book-wrapper align-items-center  d-flex flex-column">
+  <img src="images/white.png"  class="white-card">
+  <img src="images/book3.svg" alt="Book" class="book-image">
+  <span class="book-title mt-4">The lady beauty Scarlett</span>
+  <span class="writer mt-2 sm">Arthur Doyle</span>
+  <span class="price sm mt-3">$ 45.00</span>
+</div> 
+</ng-template> 
+    
+    <ng-template carouselSlide><div class="book-wrapper align-items-center  d-flex flex-column">
+  <img src="images/white.png"  class="white-card">
+  <img src="images/book4.svg" alt="Book" class="book-image">
+  <span class="book-title mt-4">Once upon a time</span>
+  <span class="writer mt-2 sm"> Klien Marry</span>
+  <span class="price sm mt-3">$ 35.00</span>
+</div> 
+</ng-template>  -->
+  </owl-carousel-o>
+  </div>
+</div>
+
+ 
+ </section>
+
+
+    

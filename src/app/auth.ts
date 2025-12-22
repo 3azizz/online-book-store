@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import {inject ,Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { IChangePassword, IForgotPasswordRequest, IForgotPasswordResponse, ILoginRequest ,ILoginResponse,IRegisterRequest, IRegisterResponse, IResetPassword } from './IAuth';
+import {  Category, IChangePassword, IForgotPasswordRequest, IForgotPasswordResponse, ILoginRequest ,ILoginResponse,IOneBookResponse,IRegisterRequest, IRegisterResponse, IResetPassword } from './IAuth';
 
 
 
@@ -33,4 +33,18 @@ export class Auth {
     return this.http.post<IChangePassword>('auth/change-password', data);
   }
 
+   getBooks(): Observable<any> {
+  return this.http.get('book');
+}
+
+
+
+ getOneBook(): Observable<any> {
+  return this.http.get<IOneBookResponse>('book/671f8818ac86463f9ddda377');
+}
+
+getCategories(): Observable<any> {
+  return this.http.get<Category>('category');
+
+}
 }

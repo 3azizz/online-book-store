@@ -1,0 +1,54 @@
+<section>
+<div class="row w-100">
+<owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide *ngFor="let book of onebook">    <div class=" d-flex  align-items-center">
+        <div class="col-md-6 book-wrapper">
+            <img [src]="book.image" alt="" class="book-image w-100">
+        </div>
+        <div class="col-md-6 justify-content-center align-items-start featured-book-text ">
+            <h2 class="section-title">Featured Book</h2>
+            <span class="book-title">{{ book?.title }}</span>
+            <p class="book-description mt-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed <br> eu feugiat amet, libero ipsum enim pharetra hac.
+            </p> 
+            <span class="price mb-5">$ {{ book?.price }}</span> <br>
+            <button class="btn btn-outline-primary read-more-btn mt-5">View more</button>
+        </div>
+    </div>
+</ng-template>  
+    
+<!-- <ng-template carouselSlide>    <div class=" d-flex  align-items-center">
+        <div class="col-md-6 book-wrapper">
+            <img src="images/singleboook.png" alt="" class="book-image w-100">
+        </div>
+        <div class="col-md-6 justify-content-center align-items-start featured-book-text ">
+            <h2 class="section-title">Featured Book</h2>
+            <span class="book-title">Birds gonna be happy</span>
+            <p class="book-description mt-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed <br> eu feugiat amet, libero ipsum enim pharetra hac.
+            </p> 
+            <span class="price mb-5">$ 45.00</span> <br>
+            <button class="btn btn-outline-primary read-more-btn mt-5">View more</button>
+        </div>
+    </div>
+</ng-template>  
+
+
+<ng-template carouselSlide>    <div class=" d-flex  align-items-center">
+        <div class="col-md-6 book-wrapper">
+            <img src="images/singleboook.png" alt="" class="book-image w-100">
+        </div>
+        <div class="col-md-6 justify-content-center align-items-start featured-book-text ">
+            <h2 class="section-title">Featured Book</h2>
+            <span class="book-title">Birds gonna be happy</span>
+            <p class="book-description mt-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed <br> eu feugiat amet, libero ipsum enim pharetra hac.
+            </p> 
+            <span class="price mb-5">$ 45.00</span> <br>
+            <button class="btn btn-outline-primary read-more-btn mt-5">View more</button>
+        </div>
+    </div>
+</ng-template>   -->
+  </owl-carousel-o>
+</div>
+</section>

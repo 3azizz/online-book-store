@@ -77,3 +77,40 @@ export interface IChangePassword {
   message: string[];
   timestamp: string;
 }
+
+export interface IOneBookResponse {
+  _id: string;
+  name: string;
+  description: string;
+  author: string;
+  price: number;
+  image: string;
+  category: Category;
+  status: string;
+}
+
+export interface Category {
+  _id: string;
+  title: string;
+  status: string;
+  updatedAt: string;
+  createdAt: string;
+  __v: number;
+}
+
+export interface ICCategoryBooksResponse {
+  _id: string;
+  title: string;
+  status: string;
+  books: Book[];
+}
+
+export interface Book {
+  _id: string;
+  name: string;
+  description: string;
+  author: string;
+  price: number;
+  image: string;
+  status: string;
+}

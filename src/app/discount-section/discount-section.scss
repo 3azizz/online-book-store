@@ -1,0 +1,30 @@
+.section {
+  background-color: #fcebea;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  .discount-header {
+    width: 588;
+    height: 132;
+    opacity: 1;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 66px;
+    letter-spacing: 0%;
+    color: #463c74;
+  }
+
+  .discount-p {
+    width: 588;
+    height: 64;
+    opacity: 1;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 5%;
+    color: #393280;
+  }
+
+  
+}

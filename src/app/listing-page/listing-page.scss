@@ -1,0 +1,160 @@
+// navbar css
+
+.image-container {
+  width: 86px;
+  height: 86px;
+  opacity: 1;
+  border-radius: 43px;
+}
+
+ul li {
+  display: inline-block;
+  margin-right: 15px;
+  font-family: Inter;
+  font-weight: 800;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.active {
+  color: #ed553b;
+}
+
+// *************************************
+
+.breadcrumb {
+  background: linear-gradient(82.93deg, #FFE5E5 0%, #F5FFFE 113.52%);
+  width: 100%;
+  height: 98px;
+  opacity: 1;
+  justify-content: center;
+  align-content: center;
+}
+
+
+
+// carousel css
+
+
+
+.new-release-book {
+  width: 100%;
+  // height: 976px;
+  background-color: #fcecec;
+
+  .some-quality-header {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: 12%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #7a7a7a;
+  }
+  .new-release-header {
+    margin-top: 20px;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #393280;
+  }
+}
+
+// ************* book card style
+section .row {
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+
+
+.book-wrapper {
+  position: relative;
+  width: 280px;
+   padding-top: 140px;
+}
+
+.book-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  z-index: 2;
+}
+
+
+.white-card {
+  width: 100%;
+  // height: 360px;
+  object-fit: contain;
+}
+
+
+.book-title {
+  width: 264px;
+  height: 27px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #393280;
+}
+.writer {
+  color: #888888;
+}
+.price {
+  width: 72px;
+  height: 22px;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 2%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ed553b;
+}
+
+.white-card {
+  width: 100%;
+  height: 360px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+// *******************************************
+
+
+
+// Sidebar css
+
+
+.sidebar {
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.sidebar-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.sidebar-section {
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+// ************************************
